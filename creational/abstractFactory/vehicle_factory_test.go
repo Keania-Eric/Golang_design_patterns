@@ -39,7 +39,7 @@ func TestCarFactory(t *testing.T) {
 
 	t.Logf("Car Vehicle has %d wheels", carVehicle.NumOfWheels())
 
-	luxuryCar, ok := carVehicle.(Car)
+	luxuryCar, ok := carVehicle.(Car) // Type assertion in go known as casting in other languages
 
 	if !ok {
 		t.Fatal("Struct assertion failed")
